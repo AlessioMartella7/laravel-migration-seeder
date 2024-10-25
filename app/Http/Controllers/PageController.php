@@ -9,7 +9,8 @@ use Spatie\FlareClient\View;
 class PageController extends Controller
 {
     public function home(){
-        $trains = Trains::all();
-        return view('pages.home', compact('trains'));
+        $now = now();
+        $trains = Trains::where('date', '>=', $now)->get();
+        return view('pages.home', compact('trains','now'));
     }
 }
