@@ -53,6 +53,3 @@
     </div>
 
 @endsection
-
-{{--
-Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna. --}}
