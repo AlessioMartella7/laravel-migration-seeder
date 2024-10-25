@@ -4,7 +4,7 @@
 
 @section('main-content')
 
-    <h1>Homepage</h1>
+    @dd($trains)
 
 @endsection
 
