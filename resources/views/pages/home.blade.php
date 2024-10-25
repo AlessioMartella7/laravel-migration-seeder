@@ -9,7 +9,7 @@
             <div class="col 12">
                 <table class="table table-striped table-hover">
                     <thead>
-                        <tr>
+                        <tr class="table-primary">
                             <th scope="col">ID</th>
                             <th scope="col">Company</th>
                             <th scope="col">Date</th>
