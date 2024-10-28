@@ -9,8 +9,9 @@ use Carbon\Carbon;
 class PageController extends Controller
 {
     public function home(){
-        $now = now();
-        $trains = Train::where('date', '>=', $now)->get();
+        // $now = now();
+        // $trains = Train::where('date', '>=', $now)->get();
+        $trains = Train::all();
         return view('pages.home', compact('trains'));
     }
 }
