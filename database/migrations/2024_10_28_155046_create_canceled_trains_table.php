@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('canceled_trains', function (Blueprint $table) {
             $table->id();
+            $table->string('company',100);
+            $table->string('from', 100);
+            $table->string('to', 100);
+            $table->string('train_code', 50);
+            $table->time('departure');
+            $table->time('arrival');
+            $table->tinyInteger('carriage_number')->unsigned();
             $table->timestamps();
         });
     }

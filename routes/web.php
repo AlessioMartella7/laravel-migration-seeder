@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CanceledTrainController;
 use App\Http\Controllers\DelayedTrainController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PassengerController;
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/passenger', [PassengerController::class, 'index'])->name('passenger');
 Route::get('/delayed', [DelayedTrainController::class, 'index'])->name('delayed');
+Route::get('/canceled', [CanceledTrainController::class, 'index'])->name('canceled');
